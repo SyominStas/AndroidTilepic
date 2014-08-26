@@ -5,7 +5,7 @@
 
 Here we got.
 
-![Screenshot]()
+![Screenshot](https://github.com/SyominStas/AndroidTilepic/blob/master/tilepic_example.jpg)
 
 ## Usage
 
