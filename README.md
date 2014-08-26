@@ -21,7 +21,7 @@ List<String> urls = new ArrayList<>();
 
 // Put urls to "urls" list
 for (int i = 0; i < 10; i++) {
-    urls.put();
+    urls.put("your/url/from/something.*");
 }
 
 // Use lib to display all images
