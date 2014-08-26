@@ -1,7 +1,7 @@
 # Tilepic
 
 
-Library to display images without changing the relationship of the parties
+### Library to display images without changing the relationship of the parties.
 
 Here we got.
 
@@ -13,18 +13,18 @@ Here we got.
 
 ``` java
 
-// create list view
+// Create list view
 ListView list = (ListView) findViewById(R.id.listview);
 
-// create list of string 
+// Create list of string 
 List<String> urls = new ArrayList<>();
 
-// put urls to "urls" list
+// Put urls to "urls" list
 for (int i = 0; i < 10; i++) {
     urls.put();
 }
 
-// use lib to display all images
+// Use lib to display all images
 Tilepic.with(context).put(urls).into(listview);
 
 ```

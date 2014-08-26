@@ -33,8 +33,9 @@ public class Tilepic extends BaseAdapter {
     private Integer oneline;
     private Integer max;
     private View.OnClickListener listener = null;
-    private Boolean logActive = false;
-    private Boolean loaderFlag = false;
+    private boolean flagLogs = false;
+    private boolean flagPreloader = false;
+    private boolean flagDownloadWait = false;
     private String TAG = "NAME";
 
     // privates things
@@ -127,7 +128,7 @@ public class Tilepic extends BaseAdapter {
         }).start();
     }
 
-    public Tilepic(Context context, List<String> urls) {
+    private Tilepic(Context context, List<String> urls) {
         this.context = context;
 
         //TODO: обработка urls
@@ -162,15 +163,23 @@ public class Tilepic extends BaseAdapter {
         this.max = max;
     }
 
+    /** so... enable logs
+     *
+     * @param b true - logs enabled, false - not
+     */
     public void enableLogs(boolean b) {
-        this.logActive = b;
+        this.flagLogs = b;
     }
 
-    public void enableLoader(boolean b) {
-        this.loaderFlag = b;
+    public void waitUntillAllLoaded(boolean b) {
+        // TODO: realise it
     }
 
-    public void putUrl(final String url) {
+    public void enamlePreloaders(boolean b) {
+        // TODO: realise it
+    }
+
+    private void putUrl(final String url) {
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -306,7 +315,7 @@ public class Tilepic extends BaseAdapter {
     }
 
     private void printLog(String logMessage) {
-        if (logActive) {
+        if (flagLogs) {
             Log.v(TAG, logMessage);
         }
     }
