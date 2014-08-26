@@ -17,12 +17,23 @@ public class StartActivity extends Activity {
         ListView list = (ListView) findViewById(R.id.listview);
 
         List<String> urls = new ArrayList<>();
-        urls.add("http://s7.pikabu.ru/post_img/2014/08/17/8/1408276919_215680681.jpg");
-        urls.add("http://s5.pikabu.ru/post_img/2014/08/17/6/1408262652_664424978.jpg");
-        urls.add("http://cs540102.vk.me/c540106/v540106140/19ce4/lOJHVJ4lfdc.jpg");
-        urls.add("http://cs540102.vk.me/c540106/v540106349/13c53/hL8c9lUbUA0.jpg");
-        urls.add("http://cs540102.vk.me/c540104/v540104697/380f1/7alL7zdXxf4.jpg");
-        urls.add("http://cs540102.vk.me/c540104/v540104697/380de/RPxL_wGDShY.jpg");
+        urls.add("http://lorempixel.com/401/400/");
+        urls.add("http://lorempixel.com/402/600/");
+        urls.add("http://lorempixel.com/403/800/");
+        urls.add("http://lorempixel.com/804/400/");
+        urls.add("http://lorempixel.com/605/400/");
+        urls.add("http://lorempixel.com/206/400/");
+        urls.add("http://lorempixel.com/507/300/");
+        urls.add("http://lorempixel.com/708/500/");
+        urls.add("http://lorempixel.com/809/400/");
+        urls.add("http://lorempixel.com/610/400/");
+        urls.add("http://lorempixel.com/211/400/");
+        urls.add("http://lorempixel.com/512/300/");
+        urls.add("http://lorempixel.com/413/800/");
+        urls.add("http://lorempixel.com/814/400/");
+        urls.add("http://lorempixel.com/615/400/");
+        urls.add("http://lorempixel.com/216/400/");
+        urls.add("http://lorempixel.com/517/300/");
 
         Tilepic.with(this).put(urls).into(list);
     }
